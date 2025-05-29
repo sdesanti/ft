@@ -2,6 +2,7 @@
   "name": "finw",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://sdesanti.github.io/ft/",
   "type": "module",
   "scripts": {
     "dev": "vite",

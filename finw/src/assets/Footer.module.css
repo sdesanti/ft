@@ -1,0 +1,16 @@
+.footer-top {
+    background-color: #1A428A; /* Tu primer color */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .footer-bottom {
+    background-color: #1A428A; /* Tu segundo color (similar a bg-light) */
+    color: white; /* Similar a text-secondary */
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }

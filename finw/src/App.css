@@ -1,0 +1,601 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Contenedor principal que ocupa toda la altura y empuja el footer abajo */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Área de contenido (imagen + texto) para la página principal */
+.contenido-flex-home {
+  display: flex;
+  flex: 1; /* ocupa todo el espacio entre navbar y footer */
+  position: relative;
+}
+
+.titulo-home {
+  font-size: 5rem;
+  font-weight: 900;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+  letter-spacing: -1px;
+  animation: slideInDown 0.6s ease-out;
+}
+
+.subtitulo-home {
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #5ABEB7;
+  margin-top: 0;
+  animation: fadeInUp 0.7s ease-out;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.navbar {
+  background-color: white !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+}
+
+.nav-link {
+  transition: all 0.3s ease;
+  font-weight: 100;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  font-weight: bolder;
+  color: #1A428A; /* O el color de tu marca */
+}
+
+.nav-link.text-primary:hover {
+  font-weight: 200;
+  color: #1A428A !important; /* Azul más oscuro */
+  font-weight: bolder;
+}
+
+.d-flex img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+
+/* Imagen izquierda */
+.imagen-izquierda {
+  object-fit: cover;
+  width: 249px;
+  height: 792px;
+}
+
+/* Texto al centro */
+.texto-home {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.separador-azul {
+  display: flex;
+  flex-direction: row;
+  background-color: #1A428A;
+  height: 105px;
+  width: 1223;
+  align-items: center;
+  margin: 5rem;
+}
+
+/* Estilos para la página "Somos" */
+.contenido-flex-somos {
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Imagen izquierda en "Somos" */
+.imagen-izquierda-somos {
+  width: 300px;
+  margin: 30px;
+  margin-left: 80px;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* Texto al centro en "Somos" */
+.texto-home-somos {
+  padding: 4rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titulo-somos {
+  text-align: center;
+  color: #1A428A;
+  margin-bottom: 2rem;
+}
+
+.parrafos-somos p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.parrafos-somos p:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.parrafos-somos p:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Estilo "Servicios" */
+.contenido-flex-servicios {
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  padding: 2rem;
+  background-color: white;
+  color: #000;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos para la imagen de encabezado */
+.contenido-flex-servicios img:first-child { /* Selecciona la primera imagen dentro del contenedor */
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+/* Estilo "Servicios" */
+.contenido-flex-servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: white;
+  color: #000;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos para la imagen de encabezado */
+.contenido-flex-servicios img:first-child {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+/* Estilos para el título "SERVICIOS" */
+/* Estilo "Servicios" */
+.contenido-flex-servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: white;
+  color: #000;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos para la imagen de encabezado */
+.contenido-flex-servicios img:first-child {
+  
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+/* Estilo "Servicios" */
+.contenido-flex-servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: white;
+  color: #000;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos para la imagen de encabezado */
+.contenido-flex-servicios img:first-child {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto 30px auto;
+    display: block;
+}
+
+/* Estilos para el título "SERVICIOS" */
+.titulo-servicios {
+  text-align: center;
+  color: #1A428A;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.texto-home-servicios {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.seccion-servicio {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Estilos para las imágenes dentro de las secciones de servicio (pc) */
+.seccion-servicio img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+/* Estilos específicos para la sección de "Asesoría económica" con la imagen */
+.asesoramiento-con-imagen {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem; /* Aumentamos el gap para más separación */
+  flex-direction: row;
+  flex-basis: 100%;
+}
+
+.asesoramiento-texto {
+  flex: 1;
+}
+
+.asesoramiento-texto2 {
+  flex: 1;
+  margin-top: 5%;
+}
+
+.asesoramiento-imagen {
+  flex-shrink: 0;
+  max-width: 500px;
+  height: auto;
+  margin: 2rem;/* Puedes agregar margen aquí para separarla del texto */
+  margin-left: 2rem; /* Agrega margen a la izquierda de la imagen */
+  margin-right: 5rem;
+}
+
+.asesoramiento-imagen img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.titulo-servicio {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid #009CC7;
+  padding-left: 0.75rem;
+  color: #1a1a1a;
+}
+
+.lista-servicios {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.lista-servicios li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.lista-servicios li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #009CC7;
+  font-weight: bold;
+}
+
+.lista-servicios li {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.lista-servicios li:nth-child(1) { animation-delay: 0.1s; }
+.lista-servicios li:nth-child(2) { animation-delay: 0.2s; }
+.lista-servicios li:nth-child(3) { animation-delay: 0.3s; }
+/* ... y así sucesivamente */
+
+.titulo-servicio2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid #009CC7;
+  padding-left: 0.75rem;
+  color: #1a1a1a;
+}
+
+.lista-servicios2 {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.lista-servicios2 li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.lista-servicios2 li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #009CC7;
+  font-weight: bold;
+}
+
+.lista-servicios2 li {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.lista-servicios2 li:nth-child(1) { animation-delay: 0.1s; }
+.lista-servicios2 li:nth-child(2) { animation-delay: 0.2s; }
+.lista-servicios2 li:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*Sección clientes*/
+
+.titulo-clientes {
+  text-align: center;
+  color: #1A428A;
+  margin-bottom: 2rem;
+}
+
+.parrafo-clientes {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto;
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(10px);
+  animation-delay: 0.3s;
+}
+
+.subtitulo-galeria {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1A428A;
+  border-bottom: 2px solid #ccc;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*Contacto*/
+.titulo-contacto {
+  text-align: center;
+  color: #1A428A;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background-color: white !important;
+  color: #1A428A !important;
+  border: 2px solid #1A428A !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #1A428A !important;
+  color: white !important;
+  border-color: #1A428A !important;
+  box-shadow: 0 0 8px #1A428A88;
+}
+
+.footer-content {
+  flex-direction: column;
+  padding: 1rem;
+}
+
+
+/* Footer al final */
+.footer-modern {
+  background-color: #ffffff;
+  color: black;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .contenido-flex-home,
+  .contenido-flex-somos {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* permite crecer naturalmente con el contenido */
+    padding-top: 80px; /* Un poco menos de espacio en pantallas más pequeñas */
+    
+  }
+
+  .imagen-izquierda {
+    display: none;
+  }
+  .imagen-izquierda-somos {
+    width: 70%;
+    align-items: center;
+    height: auto;
+    max-height: 40vh; /* puedes ajustar este valor */
+  }
+
+  .texto-home{
+    margin-top: 30%;
+    margin-bottom: 30%;
+  }
+  .texto-home-somos {
+    align-items: center;
+  }
+
+  .navbar-brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+  }
+
+  /* servicios mobile */
+  .asesoramiento-imagen{
+    display: none;
+  }
+
+  /*Contacto*/
+  .titulo-contacto {
+    text-align: center;
+    color: #1A428A;
+    margin-bottom: 2rem;
+  }
+
+  .btn-primary {
+    background-color: white !important;
+    color: #1A428A !important;
+    border: 2px solid #1A428A !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .btn-primary:hover, .btn-primary:focus {
+    background-color: #1A428A !important;
+    color: white !important;
+    border-color: #1A428A !important;
+    box-shadow: 0 0 8px #1A428A88;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    padding-top: 70px; /* Aún menos en celulares muy pequeños */
+  }
+}
